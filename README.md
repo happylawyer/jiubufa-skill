@@ -8,11 +8,18 @@
 
 ### 微信 ClawBot / OpenClaw（最简单）
 
-如果你的微信已经连了 OpenClaw，一行命令安装：
+**方式一：微信里发一句话，让 Bot 帮你装（推荐）**
+
+在微信里直接发这段话给你的 Bot：
+
+> 帮我安装一个技能：从 https://github.com/happylawyer/jiubufa-skill 把 openclaw 文件夹里的 SKILL.md 下载到 ~/.openclaw/workspace/skills/jiubufa/SKILL.md
+
+Bot 会自动执行，装完后发 `/jiubufa` 即可使用。
+
+**方式二：自己在电脑终端里装**
 
 ```bash
-# 在电脑终端里执行这一行
-cp -r openclaw/. ~/.openclaw/workspace/skills/jiubufa/
+git clone https://github.com/happylawyer/jiubufa-skill.git /tmp/jiubufa-skill && mkdir -p ~/.openclaw/workspace/skills/jiubufa && cp /tmp/jiubufa-skill/openclaw/SKILL.md ~/.openclaw/workspace/skills/jiubufa/SKILL.md
 ```
 
 装好后，在微信里对你的 Bot 发 `/jiubufa` 或说「**九步法**」，它就会启动。
