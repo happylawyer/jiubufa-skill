@@ -15,7 +15,7 @@
 cp -r openclaw/. ~/.openclaw/workspace/skills/jiubufa/
 ```
 
-装好后，在微信里直接对你的 Bot 说「**九步法**」或发送案件材料，它就会按九步法流程分析。
+装好后，在微信里对你的 Bot 发 `/jiubufa` 或说「**九步法**」，它就会启动。
 
 > 没有 OpenClaw？先装：`npm install -g openclaw`，然后 `openclaw init` 初始化。
 
